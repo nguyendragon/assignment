@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: 'Heebo', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="max-w-[1152px] m-auto">
+        <section>
+            <header class="max-w-[860px] m-auto flex justify-between flex-col md:flex-row">
+                <div class="w-full flex justify-between border-b-2 md:border-none">
+                    <div class="logo p-4 text-xl text-[#000000] font-semibold">
+                        Logo
+                    </div>
+                    <div id="menu" class="py-6 mr-6 block md:hidden">
+                        <img src="/public/images/menu.png " alt=" ">
+                    </div>
+                </div>
+                <ul class="list-nav hidden md:flex justify-end shadow-xl md:shadow-none">
+                    <li>
+                        <a href=" " class="block p-4 text-xl text-[#000000] font-semibold hover:bg-[#3498db] hover:text-white">Works</a>
+                    </li>
+                    <li>
+                        <a href=" " class="block p-4 text-xl text-[#000000] font-semibold hover:bg-[#3498db] hover:text-white">Blog</a>
+                    </li>
+                    <li>
+                        <a href=" " class="block p-4 text-xl text-[#000000] font-semibold hover:bg-[#3498db] hover:text-white">Contact</a>
+                    </li>
+                </ul>
+            </header>
+        </section>
+        <section class="mx-[15px] md:mx-[0]">
+            <div class="introduce container mt-[60px] md:mt-[162px] mb-[50px] max-w-[860px] m-auto ">
+                <div class="flex flex-col-reverse md:grid grid-cols-2 md:grid-cols-3 gap-8 ">
+                    <div class="col-span-2 ">
+                        <h3 class="font-bold text-[44px] leading-[60px] text-center md:text-left text-[#21243D] mb-10  max-w-[316px] md:max-w-none m-auto">Hi, I am John,<br>Creative Technologist</h3>
+                        <p class="text-base font-normal leading-[23.5px] mb-9 text-center md:text-left">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="min-w-[208px] min-h-[47px] bg-[#FF6464] text-white leading-[47px] font-medium text-xl block m-auto md:inline">Download Resume</button>
+                    </div>
+                    <div class="col-span-1 m-auto " style="transform: translateX(-13px);">
+                        <img src="/images/avt.jpg " class="object-cover min-w-[243px] min-h-[243px] " alt=" ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container bg-[#EDF7FA] m-auto">
+            <div class="max-w-[860px] py-[26px] m-auto mx-[15px] lg:mx-auto">
+                <div class="title flex justify-between pb-[26px] ">
+                    <span class="font-regular text-[22px] w-full text-center md:text-left md:w-auto">Recent posts</span>
+                    <span class="text-[#3498db] font-regular text-[16px] hover:underline hover:cursor-pointer hidden md:block">View all</span>
+                </div>
+                <div class="list-content grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                    <div class="box-content bg-white p-4 rounded-[5px] ">
+                        <h3 class="title font-bold text-[26px] mb-[32px] ">Making a design system from scratch</h3>
+                        <div class="timed font-regular text-lg mb-[26px] ">
+                            <span>12 Feb 2020</span>
+                            <span class="mx-4 ">|</span>
+                            <span>Design, Pattern</span>
+                        </div>
+                        <p class="text-content text-left ">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                    </div>
+                    <div class="box-content bg-white ">
+                        <div class="box-content bg-white p-4 rounded-[5px] ">
+                            <h3 class="title font-bold text-[26px] mb-[32px] ">Creating pixel perfect icons in Figma</h3>
+                            <div class="timed font-regular text-lg mb-[26px] ">
+                                <span>12 Feb 2020</span>
+                                <span class="mx-4 ">|</span>
+                                <span>Figma, Icon Design</span>
+                            </div>
+                            <p class="text-content text-left ">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mx-[15px] md:mx-[0]">
+            <div class="featured-works max-w-[860px] m-auto pb-24 ">
+                <div class="title py-[26px] ">
+                    <p class="text-xl pl-1 text-center md:text-left">Featured works</p>
+                </div>
+                <div class="list-featured_work">
+                    <div class="box-featured_work border-b-2 py-4 mb-[25px] flex flex-col md:flex-row">
+                        <img src="/public/images/featured_works1.jpg " alt="" class="object-cover">
+                        <div class="info-featured_work md:pl-5 ">
+                            <h3 class="title_work font-bold text-[30px] pt-[12px] md:pt-0">Designing Dashboards</h3>
+                            <div class="py-[22px] ">
+                                <span class="time font-bold inline bg-[#142850] text-white px-2 rounded-[15px] ">2020</span>
+                                <div class="type-page inline mx-4 text-gray-400 ">Dashboard</div>
+                            </div>
+                            <p class="text-content ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="box-featured_work border-b-2 py-4 mb-[25px] flex flex-col md:flex-row">
+                        <img src="/public/images/featured_works2.jpg " alt="" class="object-cover">
+                        <div class="info-featured_work md:pl-5 ">
+                            <h3 class="title_work font-bold text-[30px] pt-[12px] md:pt-0">Vibrant Portraits of 2020</h3>
+                            <div class="py-[22px] ">
+                                <span class="time font-bold inline bg-[#142850] text-white px-2 rounded-[15px] ">2018</span>
+                                <div class="type-page inline mx-4 text-gray-400 ">Illustration</div>
+                            </div>
+                            <p class="text-content ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                    <div class="box-featured_work border-b-2 py-4 mb-[25px] flex flex-col md:flex-row">
+                        <img src="/public/images/featured_works3.jpg " alt="" class="object-cover">
+                        <div class="info-featured_work md:pl-5 ">
+                            <h3 class="title_work font-bold text-[30px] pt-[12px] md:pt-0">36 Days of Malayalam type</h3>
+                            <div class="py-[22px] ">
+                                <span class="time font-bold inline bg-[#142850] text-white px-2 rounded-[15px] ">2018</span>
+                                <div class="type-page inline mx-4 text-gray-400 ">Typography</div>
+                            </div>
+                            <p class="text-content ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="content flex justify-center flex-col py-[48px] ">
+                <div class="network flex justify-center py-[15px] ">
+                    <img src="/public/images/fb.png " class="mx-[16px] py-4 " alt=" ">
+                    <img src="/public/images/insta.png " class="mx-[16px] py-4 " alt=" ">
+                    <img src="/public/images/Group.png " class="mx-[16px] py-4 " alt=" ">
+                    <img src="/public/images/Linkedin.png " class="mx-[16px] py-4 " alt=" ">
+                </div>
+                <p class="text-center "> Copyright ©2020 All rights reserved </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const menu = document.querySelector('#menu');
+        const listNav = document.querySelector('.list-nav');
+        const featuredWorks = document.querySelector('.list-featured_work');
+        const childElementCount = featuredWorks.childElementCount;
+
+        menu.addEventListener('click', () => {
+            listNav.classList.toggle('hidden');
+        });
+
+        // window.addEventListener('resize', () => {
+        //     let width = document.documentElement.clientWidth;
+        //     let height = document.documentElement.clientHeight;
+        //     if (width < 640) {
+        //         featuredWorks.children[1].style = "display: none";
+        //         featuredWorks.children[2].style = "display: none";
+        //     } else {
+        //         featuredWorks.children[1].style = "display: flex";
+        //         featuredWorks.children[2].style = "display: flex";
+        //     }
+        // });
+    </script>
+</body>
+
+</html>
